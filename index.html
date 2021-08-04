@@ -1,14 +1,15 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Marcus Reitzl</title>
+	<title>My Portfolio</title>
 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" type="text/css" href="css/superslides.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -16,6 +17,10 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
+
+	<div class="loader">
+		<div class="inner"></div>
+	</div>
 
 	<div id="slides">
 
@@ -44,32 +49,62 @@
 	</div>
 
 
+	<nav id="navigation" class="navbar navbar-expand-lg">
+	  <a class="navbar-brand" href="index.html">Marcus Reitzl</a>
+
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#skills">Skills</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#stats">Stats</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#contact">Contact</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#portfolio">Portfolio</a>
+	      </li>
+	    </ul>
+	  </div>
+
+	</nav>
+
+
 
 
 	<div id="about" class="section">
 
-		<div class="container">
-
-			<div class="row">
-
-				<div class="col-md-5">
-					<img class="aboutImage" src="img/about-me-marcus.jpg">
-				</div>
-
-				<div class="col-md-7">
-
-
-					<h4>My name is Marcus Reitzl</h4>
-
-					<p>Hi there! I'm Marcus Reitzl from Carinthia, Austria. I currently work as a Software Engineer at Infineon Austria. I have experience creating software, mobile and desktop apps and websites. I have experience programming in many different languages such as C#, C++, Python, Java, Javascript and Objective-C/Swift for iOS.</p>
-					<p>I graduated from university in Klagenfurt, Austria in Applied Computer Science as a Bachelor of a Science and currently finishing my Master Thesis in Informatics.</p>
-				</div>
-
-			</div>
-
-		</div>
-
-	</div>
+        <div class="container">
+    
+            <div class="row">
+    
+                <div class="col-md-5">
+                    <img class="aboutImage" src="img/about-me-marcus.jpg">
+                </div>
+    
+                <div class="col-md-7">
+    
+    
+                    <h4>My name is Marcus Reitzl</h4>
+    
+                    <p>Hi there! I'm Marcus Reitzl from Carinthia, Austria. I currently work as a Software Engineer at Infineon Austria. I have experience creating software, mobile and desktop apps and websites. I have experience programming in many different languages such as C#, C++, Python, Java, Javascript and Objective-C/Swift for iOS.</p>
+                    <p>I graduated from university in Klagenfurt, Austria in Applied Computer Science as a Bachelor of a Science and currently finishing my Master Thesis in Informatics.</p>
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </div>
 
 
 
@@ -81,7 +116,7 @@
 
 				<div class="col-md-12 text-center">
 					<h2>TECHNICAL SKILLS</h2>
-					<p>A representation of my proficiency in each skill</p>
+					<p>My proficiency in each skill (drag to scroll)</p>
 				</div>
 
 
@@ -92,8 +127,26 @@
 				    		<span class="percent">67</span>
 				    		<canvas height="152" width="152"></canvas>
 				    	</span>
+				    	<h4>C#</h4>
+				    	<p>Used in most of my Desktop Applcations</p>
+				    </div>
+
+				    <div class="skill">
+				    	<span class="chart" data-percent="72">
+				    		<span class="percent">72</span>
+				    		<canvas height="152" width="152"></canvas>
+				    	</span>
 				    	<h4>Python</h4>
-				    	<p>Used in most of my web based projects</p>
+				    	<p>Used for my Scripts</p>
+				    </div>
+
+				    <div class="skill">
+				    	<span class="chart" data-percent="14">
+				    		<span class="percent">14</span>
+				    		<canvas height="152" width="152"></canvas>
+				    	</span>
+				    	<h4>JavaScript</h4>
+				    	<p>This Homepage is build in JS</p>
 				    </div>
 
 
@@ -102,8 +155,8 @@
 				    		<span class="percent">90</span>
 				    		<canvas height="152" width="152"></canvas>
 				    	</span>
-				    	<h4>HTML</h4>
-				    	<p>Used in most of my web based projects</p>
+				    	<h4>Data Science</h4>
+				    	<p>Artificial Intelligence, Machine Leanring and Virtualization</p>
 				    </div>
 
 
@@ -113,17 +166,8 @@
 				    		<span class="percent">30</span>
 				    		<canvas height="152" width="152"></canvas>
 				    	</span>
-				    	<h4>Java</h4>
-				    	<p>Used in most of my web based projects</p>
-				    </div>
-
-                    <div class="skill">
-				    	<span class="chart" data-percent="30">
-				    		<span class="percent">84</span>
-				    		<canvas height="152" width="152"></canvas>
-				    	</span>
-				    	<h4>C#</h4>
-				    	<p>Used in most of my web based projects</p>
+				    	<h4>Project Management</h4>
+				    	<p>Know the Direction</p>
 				    </div>
 
 
@@ -167,8 +211,8 @@
 								<i class="fa fa-calendar"></i>
 							</div>
 							<div class="squareContent">
-                                <h2 class="counter">5</h2>
-                                <h3>Study</h3>
+                                <h2 class="counter">71</h2>
+                                <h3>Academic Courses</h3>
                             </div>
 						</div>
 					</div>
@@ -181,8 +225,8 @@
 								<i class="fa fa-bolt"></i>
 							</div>
 							<div class="squareContent">
-                                <h2 class="counter">18</h2>
-                                <h3>Scripts</h3>
+                                <h2 class="counter">2</h2>
+                                <h3>Homepages</h3>
                             </div>
 						</div>
 					</div>
@@ -195,8 +239,8 @@
 								<i class="fa fa-cloud"></i>
 							</div>
 							<div class="squareContent">
-                                <h2 class="counter">0</h2>
-                                <h3>Error</h3>
+                                <h2 class="counter">6</h2>
+                                <h3>Technologies</h3>
                             </div>
 						</div>
 					</div>
@@ -209,14 +253,380 @@
 
 	</div>
 
-    <div id = "contact" class="contentSection section">
-        <div class="col-md-12 text-center">
-            <p class ="subHeading">Lets Go</p>
-            <h2>Listen to me</h2>
-            <a href="mailTo:logarithmix@gmail.com" class="contactButton" >Contact me</a>
+	<div id="contact" class="contactSection section">
 
-        </div>
-    </div>
+		<div class="col-md-12 text-center">
+
+			<p class="subHeading">Like what you see?</p>
+			<h2>Contact me!</h2>
+			<a href="mailTo:reece@gmail.com" class="contactButton">GET IN TOUCH!</a>
+
+		</div>
+
+	</div>
+
+
+
+	<div id="portfolio" class="section">
+
+		<div class="container">
+
+			<div class="row">
+
+				<div class="heading">
+					<h2>PORTFOLIO</h2>
+				</div>
+
+				<div class="filter">
+
+					<ul id="filters">
+
+						<li><a href="#" data-filter="*" class="current">ALL</a></li>
+						<li><a href="#" data-filter=".apps">Apps</a></li>
+						<li><a href="#" data-filter=".me">Me</a></li>
+						<li><a href="#" data-filter=".websites">Websites</a></li>
+
+					</ul>
+
+				</div>
+
+
+				<div class="itemsContainer">
+
+					<ul class="items">
+
+						<li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+
+							<div class="item">
+
+								<img src="img/portfolio/thumbnails/dog-square.jpeg">
+
+
+								<div class="icons">
+									<a href="img/portfolio/dog.jpeg" title="View image" class="openButton" data-fancybox data-caption="This is a cute dog">
+										<i class="fa fa-search"></i>
+									</a>
+
+									<a href="" target="_blank" class="projectLink">
+										<i class="fa fa-link"></i>
+									</a>
+								</div>
+
+								<div class="imageOverlay"></div>
+
+							</div>
+
+
+						</li>
+
+						<li class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+
+							<div class="item">
+
+								<img src="img/portfolio/thumbnails/dog-square.jpeg">
+
+
+								<div class="icons">
+									<a href="img/portfolio/dog.jpeg" title="View image" class="openButton" data-fancybox data-caption="This is a cute dog">
+										<i class="fa fa-search"></i>
+									</a>
+
+									<a href="" target="_blank" class="projectLink">
+										<i class="fa fa-link"></i>
+									</a>
+								</div>
+
+								<div class="imageOverlay"></div>
+
+							</div>
+
+
+						</li>
+
+						<li class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+
+							<div class="item">
+
+								<img src="img/portfolio/thumbnails/dog-square.jpeg">
+
+
+								<div class="icons">
+									<a href="img/portfolio/dog.jpeg" title="View image" class="openButton" data-fancybox data-caption="This is a cute dog">
+										<i class="fa fa-search"></i>
+									</a>
+
+									<a href="" target="_blank" class="projectLink">
+										<i class="fa fa-link"></i>
+									</a>
+								</div>
+
+								<div class="imageOverlay"></div>
+
+							</div>
+
+
+						</li>
+
+						<li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+
+							<div class="item">
+
+								<img src="img/portfolio/thumbnails/dog-square.jpeg">
+
+
+								<div class="icons">
+									<a href="img/portfolio/dog.jpeg" title="View image" class="openButton" data-fancybox data-caption="This is a cute dog">
+										<i class="fa fa-search"></i>
+									</a>
+
+									<a href="" target="_blank" class="projectLink">
+										<i class="fa fa-link"></i>
+									</a>
+								</div>
+
+								<div class="imageOverlay"></div>
+
+							</div>
+
+
+						</li>
+
+						<li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+
+							<div class="item">
+
+								<img src="img/portfolio/thumbnails/dog-square.jpeg">
+
+
+								<div class="icons">
+									<a href="img/portfolio/dog.jpeg" title="View image" class="openButton" data-fancybox data-caption="This is a cute dog">
+										<i class="fa fa-search"></i>
+									</a>
+
+									<a href="" target="_blank" class="projectLink">
+										<i class="fa fa-link"></i>
+									</a>
+								</div>
+
+								<div class="imageOverlay"></div>
+
+							</div>
+
+
+						</li>
+
+
+						<li class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+
+							<div class="item">
+
+								<img src="img/portfolio/thumbnails/dog-square.jpeg">
+
+
+								<div class="icons">
+									<a href="img/portfolio/dog.jpeg" title="View image" class="openButton" data-fancybox data-caption="This is a cute dog">
+										<i class="fa fa-search"></i>
+									</a>
+
+									<a href="" target="_blank" class="projectLink">
+										<i class="fa fa-link"></i>
+									</a>
+								</div>
+
+								<div class="imageOverlay"></div>
+
+							</div>
+
+
+						</li>
+
+						<li class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+
+							<div class="item">
+
+								<img src="img/portfolio/thumbnails/dog-square.jpeg">
+
+
+								<div class="icons">
+									<a href="img/portfolio/dog.jpeg" title="View image" class="openButton" data-fancybox data-caption="This is a cute dog">
+										<i class="fa fa-search"></i>
+									</a>
+
+									<a href="" target="_blank" class="projectLink">
+										<i class="fa fa-link"></i>
+									</a>
+								</div>
+
+								<div class="imageOverlay"></div>
+
+							</div>
+
+
+						</li>
+
+						<li class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+
+							<div class="item">
+
+								<img src="img/portfolio/thumbnails/dog-square.jpeg">
+
+
+								<div class="icons">
+									<a href="img/portfolio/dog.jpeg" title="View image" class="openButton" data-fancybox data-caption="This is a cute dog">
+										<i class="fa fa-search"></i>
+									</a>
+
+									<a href="" target="_blank" class="projectLink">
+										<i class="fa fa-link"></i>
+									</a>
+								</div>
+
+								<div class="imageOverlay"></div>
+
+							</div>
+
+
+						</li>
+
+						<li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+
+							<div class="item">
+
+								<img src="img/portfolio/thumbnails/dog-square.jpeg">
+
+
+								<div class="icons">
+									<a href="img/portfolio/dog.jpeg" title="View image" class="openButton" data-fancybox data-caption="This is a cute dog">
+										<i class="fa fa-search"></i>
+									</a>
+
+									<a href="" target="_blank" class="projectLink">
+										<i class="fa fa-link"></i>
+									</a>
+								</div>
+
+								<div class="imageOverlay"></div>
+
+							</div>
+
+
+						</li>
+
+
+						<li class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+
+							<div class="item">
+
+								<img src="img/portfolio/thumbnails/dog-square.jpeg">
+
+
+								<div class="icons">
+									<a href="img/portfolio/dog.jpeg" title="View image" class="openButton" data-fancybox data-caption="This is a cute dog">
+										<i class="fa fa-search"></i>
+									</a>
+
+									<a href="" target="_blank" class="projectLink">
+										<i class="fa fa-link"></i>
+									</a>
+								</div>
+
+								<div class="imageOverlay"></div>
+
+							</div>
+
+
+						</li>
+
+
+						<li class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+
+							<div class="item">
+
+								<img src="img/portfolio/thumbnails/dog-square.jpeg">
+
+
+								<div class="icons">
+									<a href="img/portfolio/dog.jpeg" title="View image" class="openButton" data-fancybox data-caption="This is a cute dog">
+										<i class="fa fa-search"></i>
+									</a>
+
+									<a href="" target="_blank" class="projectLink">
+										<i class="fa fa-link"></i>
+									</a>
+								</div>
+
+								<div class="imageOverlay"></div>
+
+							</div>
+
+
+						</li>
+
+						<li class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+
+							<div class="item">
+
+								<img src="img/portfolio/thumbnails/dog-square.jpeg">
+
+
+								<div class="icons">
+									<a href="img/portfolio/dog.jpeg" title="View image" class="openButton" data-fancybox data-caption="This is a cute dog">
+										<i class="fa fa-search"></i>
+									</a>
+
+									<a href="http://reecekenney.com" target="_blank" class="projectLink">
+										<i class="fa fa-link"></i>
+									</a>
+								</div>
+
+								<div class="imageOverlay"></div>
+
+							</div>
+
+
+						</li>
+
+					</ul>
+
+				</div>
+
+
+
+
+
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<div class="copyrightSection">
+
+		<div class="col-md-12 text-center">
+			<p>&copy; Copyright Marcus Reitzl 2021</p>
+		</div>
+
+	</div>
+
+
+
+
+
+
 
 
 	<script src="js/countUp.js"></script>
@@ -227,8 +637,13 @@
 	<script src="js/typed.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://unpkg.com/isotope-layout@3.0.5/dist/isotope.pkgd.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
 
 	<script src="js/script.js"></script>
 
 </body>
 </html>
+
+
+
